@@ -1,0 +1,94 @@
+/* Set global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #eee;
+}
+
+/* Style main container */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: .4rem;
+    background-color: white;
+    box-shadow: 0 6px 10px rgba(0,0,0,.07);
+    transition: all .2s ease-in-out;
+}
+
+#container:focus {
+    outline: none;
+    box-shadow: 0 6px 10px rgba(0,0,0,.1);
+}
+
+#container > * {
+    width: 100%;
+}
+
+#container h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3F51B5;
+    color: white;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+#container p {
+    padding: 0 1rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Style buy button */
+.buy-button {
+    display: inline-block;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: .4rem;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: #eee;
+}
+
+.buy-button:active {
+    background-color: #ccc;
+}
+
+.buy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3F51B5;
+}
+
+@media (min-width: 600px) {
+    #container {
+        padding: 2rem;
+    }
+
+    #container h1 {
+        font-size: 2rem;
+    }
+
+    .buy-button {
+        padding: .75rem 2rem;
+        font-size: 1.25rem;
+    }
+}

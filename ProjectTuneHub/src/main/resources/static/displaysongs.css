@@ -1,0 +1,67 @@
+/* Reset default styles for certain elements */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table headers */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+th:hover {
+    background-color: #444;
+}
+
+/* Style the table cells */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style the audio players */
+audio {
+    width: 100%;
+    margin-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+audio:hover {
+    opacity: 0.8;
+}
+
+/* Make the whole table row clickable */
+tr {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Animate table row expansion on click */
+tr.expanded {
+    height: auto;
+}
+
+tr.collapsed {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}

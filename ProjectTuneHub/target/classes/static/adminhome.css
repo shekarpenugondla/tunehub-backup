@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+}
+
+form {
+    text-align: center; /* Center the form */
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 200px; /* Reduced button width */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2; /* Silver white background color */
+    color: #333; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #d9d9d9; /* Slightly darker silver white background color on hover */
+}
